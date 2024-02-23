@@ -1,17 +1,24 @@
-// BlogPost.js
+// Import necessary dependencies
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-const BlogPost = ({ title,path, content, date, image }) => {
+// Define a functional component BlogPost that takes props as input
+const BlogPost = ({ title, path, content, date, image }) => {
+  // Extract the image source from props
+  const Srcimage = image;
 
-     const Srcimage = image;
+  // Render the blog post
   return (
     <div className="blog-post">
+      {/* Render the blog post title as a NavLink to the specified path */}
       <h2><NavLink className="link" to={`/${path}`}>{title}</NavLink></h2>
+      {/* Render the blog post content */}
       <p>{content}</p>
-      <p><a style={{color:'#06d6a0'}}>Date: </a>{date}</p>
+      {/* Render the blog post date */}
+      <p><a style={{ color: '#06d6a0' }}>Date: </a>{date}</p>
     </div>
   );
 };
 
+// Export the BlogPost component
 export default BlogPost;

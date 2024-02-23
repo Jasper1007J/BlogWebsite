@@ -1,4 +1,4 @@
-// App.js
+// Import necessary dependencies and components
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
@@ -7,8 +7,9 @@ import IdentityManager from './Projects/IdentityManager';
 import ImageSlider from './Projects/ImageSlider';
 import TaskAlliance from './Projects/TaskAlliance';
 import UserManagement from './Projects/UserManagement';
-
+import Navigation from './components/Navigation';
 function App() {
+  // Define an array of posts containing information about different projects
   const posts = [
     {
       id: 1,
@@ -40,22 +41,21 @@ function App() {
     },
   ];
 
-  // const handleSearch = (query) => {
-  //   // Handle search functionality here
-  //   console.log('Searching for:', query);
-  // };
+  // Render the application
   return(
     <div>
-        <Routes>
-        <Route path='/' exact element={<Home posts = {posts}/>}/>
-      <Route path='/task-alliance' element={<TaskAlliance/>} />
-      <Route path='/image-slider' element={<ImageSlider/>} />
-      <Route path='/user-management' element={<UserManagement/>} />
-      <Route path='/identity-manager' element={<IdentityManager/>}/>
-    </Routes>
+     <Navigation posts={posts}/>
+      <Routes>
+        {/* Define routes for different pages */}
+        <Route path='/' exact element={<Home posts={posts} />} /> {/* Home page */}
+        <Route path='/task-alliance' element={<TaskAlliance />} /> {/* Task Alliance project */}
+        <Route path='/image-slider' element={<ImageSlider />} /> {/* Image Slider project */}
+        <Route path='/user-management' element={<UserManagement />} /> {/* User Management project */}
+        <Route path='/identity-manager' element={<IdentityManager />} /> {/* Identity Manager project */}
+      </Routes>
+   
     </div>
-  )
-  
+  );
 }
 
 export default App;

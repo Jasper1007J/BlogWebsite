@@ -1,13 +1,11 @@
 import { NavLink } from 'react-router-dom';
 import BlogPost from './components/BlogPost';
 import CommentSection from './components/CommentSection';
-import Navigation from './components/Navigation';
 
 export default function Home({posts}){
 
      return(
           <div className="App">
-    <Navigation posts={posts} />
       
       <div className='profile'>
       <img src={require('./Image.jpg')}></img>
