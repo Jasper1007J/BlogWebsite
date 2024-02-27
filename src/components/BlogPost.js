@@ -5,6 +5,7 @@ import { NavLink } from 'react-router-dom';
 // Define a functional component BlogPost that takes props as input
 const BlogPost = ({ title, path, content, date, image }) => {
   // Extract the image source from props
+
   // Render the blog post
   return (
     <div className="blog-post">
@@ -13,8 +14,8 @@ const BlogPost = ({ title, path, content, date, image }) => {
       {/* Render the blog post content */}
       <p>{content}</p>
       {/* Render the blog post date */}
-      <p><a style={{ color: '#06d6a0' }}>Date: </a>{date}</p>
-    </div>  
+      <p><label style={{ color: '#06d6a0' }}>Date: </label>{date}</p>
+    </div>
   );
 };
 
