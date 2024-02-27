@@ -10,7 +10,7 @@ export default function Home({posts}){
       <div className='profile'>
       <img src={require('./Image.jpg')} alt='profile'></img>
         <h1>I<label style={{color:'#06d6a0'}}> ' </label>m<p> NAMALA JASPER</p> 
-        <label>MERN Stack Developer & MEAN Stack Developer</label></h1>
+        <label style={{fontSize:'25px'}}>MERN Stack Developer & MEAN Stack Developer</label></h1>
         
       </div>
       <div className='social-media'>
