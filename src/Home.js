@@ -15,7 +15,7 @@ export default function Home({posts}){
       </div>
       <div className='social-media'>
         <div><p style={{color:'#ff0054'}}>Github Profile</p><NavLink className='profile-link btn' to='https://github.com/Jasper1007J'  ><span className='bn54span'>Jasper1007J</span></NavLink> </div>
-        <div><p style={{color:'#ff0054'}}>Linkedin Profile</p><NavLink className='profile-link btn' to='https://www.linkedin.com/in/jasper-namala'><span className='bn54span'>jasper-namala</span></NavLink></div>
+        <div><p style={{color:'#ff0054'}}>Linkedin Profile</p><NavLink className='profile-link btn' to='https://www.linkedin.com/in/namala-jasper/'><span className='bn54span'>jasper-namala</span></NavLink></div>
         <div><p style={{color:'#ff0054'}}>Email</p><NavLink className='profile-link btn' style={{width:'70%'}}><span className='bn54span'>jasperchandu1007@gmail.com</span></NavLink> </div>
         <div><p style={{color:'#ff0054'}}>Contact</p><NavLink className='profile-link btn'><span className='bn54span'>7386198025</span></NavLink> </div>
         </div>
