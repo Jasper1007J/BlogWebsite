@@ -4,7 +4,10 @@
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   scroll-behavior: smooth;
 }
+*{
+  border-radius: 10px;
 
+}
 
 .blog-posts {
   display: grid;
@@ -322,6 +325,7 @@ button {
   margin-right: -10%;
   float: right;
   width: 35%;
+  border-radius: 20px;
   height: auto;
 }
 .profile h1{
